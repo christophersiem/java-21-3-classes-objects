@@ -24,4 +24,8 @@ public class Student {
     public void setMatriculationNumber(int matriculationNumber) {
         this.matriculationNumber = matriculationNumber;
     }
+
+    public String toString(){
+        return "Student: " + firstName + ", ID: " + matriculationNumber;
+    }
 }

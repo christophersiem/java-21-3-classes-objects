@@ -33,4 +33,19 @@ public class StudentTest {
         assertEquals(123, student.getMatriculationNumber());
     }
 
+    @Test
+    public void toStringShouldReturnStringOfStudentObject(){
+        //GIVEN
+        Student student = new Student("Klaus",1);
+        String expected = "Student: Klaus, ID: 1";
+
+        //WHEN
+        String actual = student.toString();
+
+        //THEN
+        assertEquals(expected, actual);
+
+    }
+
+
 }
